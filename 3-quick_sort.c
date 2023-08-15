@@ -67,7 +67,7 @@ size_t lomuto(int array[], size_t size)
 		replace(&array[i + 1], &array[size - 1]);
 		print_quick(array, size, 0);
 	}
-	return (i +1);
+	return (i + 1);
 }
 
 /**
