@@ -24,3 +24,17 @@ void bubble_sort(int *array, size_t size)
 		}
 	}
 }
+
+/**
+ * replace - swaps two integers
+ * @a: first integer
+ * @b: second integer
+ */
+
+void replace(int *a, int *b)
+{
+	int tmp;
+	tmp = *b;
+	*b = *a;
+	*a = tmp;
+}
