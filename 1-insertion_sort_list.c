@@ -1,7 +1,7 @@
 #include "sort.h"
 
 /**
- * insertion_sort - Sorts via the insert algorithm
+ * insertion_sort_list - Sorts via the insert algorithm
  * @list: list to sort
  */
 
@@ -16,7 +16,7 @@ void insertion_sort_list(listint_t **list)
 	while ((current = current->next))
 	{
 		tmp = current;
-		while(tmp->prev && tmp->n < tmp->prev->n)
+		while (tmp->prev && tmp->n < tmp->prev->n)
 		{
 			last = tmp->prev;
 			if (tmp->next)
