@@ -28,13 +28,13 @@ void quick_sort(int *array, size_t size)
  * @b: second integer
  */
 
-void replace_new(int **a, int *b)
+void replace(int *a, int *b)
 {
 	int tmp;
 
 	tmp = *b;
-	*b = **a;
-	**a = tmp;
+	*b = *a;
+	*a = tmp;
 }
 
 /**
@@ -57,14 +57,14 @@ size_t lomuto(int array[], size_t size)
 			i++;
 			if (i != j)
 			{
-				replace_new(&array, &array[j]);
+				replace(&array[i], &array[j]);
 				print_quick(array, size, 0);
 			}
 		}
 	}
 	if (i + 1 != size - 1)
 	{
-		replace_new(&array[i + 1], &array[size - 1]);
+		replace(&array[i + 1], &array[size - 1]);
 		print_quick(array, size, 0);
 	}
 	return (i +1);
