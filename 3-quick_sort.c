@@ -76,7 +76,7 @@ size_t lomuto(int array[], size_t size)
  * @start: Should initialize array
  */
 
-void print_sort(int array[], size_t size, int start)
+void print_quick(int array[], size_t size, int start)
 {
 	static int *p = (void *)0;
 	static size_t s;
