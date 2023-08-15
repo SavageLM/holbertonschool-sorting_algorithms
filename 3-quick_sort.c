@@ -23,7 +23,7 @@ void quick_sort(int *array, size_t size)
 }
 
 /**
- * replace_new - swaps two integers
+ * replace - swaps two integers
  * @a: first integer
  * @b: second integer
  */
