@@ -13,19 +13,19 @@ void insertion_sort_list(listint_t **list)
 		return;
 
 	current = *list;
-	while ((current = curent->next))
+	while ((current = current->next))
 	{
 		tmp = current;
-		while(tmp->prev && tmp-> < tmp->prev->n)
+		while(tmp->prev && tmp->n < tmp->prev->n)
 		{
 			last = tmp->prev;
 			if (tmp->next)
-				tmp->next->pre = last;
+				tmp->next->prev = last;
 			if (last->prev)
 				last->prev->next = tmp;
 			else
 				*list = tmp;
-			last->nest = tmp->next;
+			last->next = tmp->next;
 			tmp->prev = last->prev;
 			tmp->next = last;
 			last->prev = tmp;
