@@ -34,6 +34,7 @@ void bubble_sort(int *array, size_t size)
 void replace(int *a, int *b)
 {
 	int tmp;
+
 	tmp = *b;
 	*b = *a;
 	*a = tmp;
